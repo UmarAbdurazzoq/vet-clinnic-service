@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <svg style="display: none;">
+        <symbol xmlns="http://www.w3.org/2000/svg" fill="none" id="icon-money" viewBox="0 0 21 21">
+          <path fill="#fff" stroke="#fff" stroke-width=".2"
+            d="M14.507 11.14v.08l.078.017c.721.164 1.25.768 1.25 1.476a.315.315 0 0 1-.63 0c0-.504-.469-.89-1.013-.89-.545 0-1.013.386-1.013.89s.468.89 1.013.89c.913 0 1.643.689 1.643 1.52 0 .709-.529 1.312-1.25 1.476l-.078.018v.26a.315.315 0 0 1-.63 0v-.26l-.078-.018c-.722-.164-1.25-.767-1.25-1.476a.315.315 0 0 1 .63 0c0 .505.468.89 1.013.89.544 0 1.013-.385 1.013-.89s-.469-.89-1.013-.89c-.913 0-1.643-.689-1.643-1.52 0-.708.528-1.312 1.25-1.476l.078-.018v-.296a.315.315 0 0 1 .63 0v.216zm1.978-1.97a5.307 5.307 0 0 1 2.168 1.918 5.306 5.306 0 0 1 .218 5.34l.088.048-.088-.047a.315.315 0 0 1-.278.167.313.313 0 1-.148-.037 NaNh-.332a.315.315 0 0 1-.13 NaN 4.674 4.674 0 0 0 2.803 NaN 4.693 4.693 0 0 0-4.863 NaN.315.315 0 0 1 5.69 NaN.315.315 0 0 1 .067 NaNzm-1.669.11a.315.315 0 0 1 0-.63h.028a.315.315 0 0 1-.002.63h-.027zm-4.744 2.477a4.674 4.674 0 0 0-.543 2.188 4.693 4.693 0 0 0 2.646 4.207l.043-.09-.043.09a.315.315 0 0 1-.137.599.313.313 0 1-.136-.03 NaNh-.318a5.309 5.309 0 0 1-2.168 NaN 5.306 5.306 0 0 1 6.118 NaN.315.315 0 0 1-1.394 NaNzm3.499 6.853a.315.315 0 0 1 0 .63h-.027a.315.315 0 1 1 .003-.63h.024z">
+          </path>
+          <path fill="#fff" stroke="#fff" stroke-width=".2"
+            d="M15.986 7.184l.019.045.047.013c2.936.814 5.097 3.511 5.097 6.703a6.963 6.963 0 0 1-6.955 6.955 6.937 6.937 0 0 1-5.08-2.21l-.03-.031H4.15a1.812 1.812 0 0 1-1.809-1.81c0-.572.268-1.083.685-1.415l.098-.078-.098-.079a1.806 1.806 0 0 1 0-2.831l.098-.078-.098-.079a1.806 1.806 0 0 1 0-2.831l.098-.079-.098-.078a1.806 1.806 0 0 1-.685-1.416c0-.997.812-1.809 1.81-1.809h1.272l-.108-.156a1.798 1.798 0 0 1 0-2.045l.108-.157H1.909A1.81 1.81 0 0 1 .1 1.91C.1.912.912.1 1.91.1h10.167a1.811 1.811 0 0 1 1.491 2.831l-.107.157h3.513c.998 0 1.81.812 1.81 1.81 0 .997-.812 1.808-1.81 1.808h-1.27l.107.157c.069.1.127.207.175.321zm-1.205-.17l.052-.19a1.178 1.178 0 0 0-.515-.118H4.15a1.18 1.18 0 0 0 0 2.358h5.093l.029-.029a6.933 6.933 0 0 1 5.509-2.02zm-6.208 2.84l.116-.16H4.15a1.18 1.18 0 0 0 0 2.358H7.5l.021-.071a6.936 6.936 0 0 1 1.052-2.128zm-1.24 2.945l.02-.116H4.15a1.18 1.18 0 0 0 0 2.358h3.174l-.016-.114a6.984 6.984 0 0 1 .025-2.128zm.142 2.946l-.02-.074H4.15a1.18 1.18 0 0 0 0 2.358h4.414l-.107-.157a6.927 6.927 0 0 1-.982-2.127zM18.153 4.897a1.18 1.18 0 0 0-1.179-1.179H6.806a1.18 1.18 0 0 0 0 2.358h10.168a1.18 1.18 0 0 0 1.18-1.179zM.73 1.91c0 .65.529 1.18 1.18 1.18h10.167a1.18 1.18 0 0 0 0-2.359H1.91A1.18 1.18 0 0 0 .73 1.91zm7.138 12.036a6.332 6.332 0 0 0 6.326 6.325 6.332 6.332 0 0 0 6.325-6.325 6.332 6.332 0 0 0-6.325-6.326 6.332 6.332 0 0 0-6.326 6.326z">
+          </path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="icon-document" viewBox="0 0 21 21">
+          <path fill="currentColor"
+            d="M20.459 6.61c-.72-.72-1.89-.72-2.61 0l-1.852 1.852V3.586c0-.493-.192-.956-.54-1.305L13.717.54A1.834 1.834 0 0 0 12.41 0H1.846A1.848 1.848 0 0 0 0 1.846v17.31c0 1.017.828 1.846 1.846 1.846H14.15a1.848 1.848 0 0 0 1.846-1.846v-5.47L20.46 9.22a1.845 1.845 0 0 0 0-2.61zm-8.153-5.38c.116 0 .34-.02.54.18l1.74 1.741c.196.195.18.41.18.54h-2.46v-2.46zm2.46 17.926a.615.615 0 0 1-.615.615H1.846a.616.616 0 0 1-.615-.615V1.846c0-.34.276-.615.615-.615h9.229v3.076c0 .34.276.615.615.615h3.077v4.772L12.95 11.51l-.87.87a.615.615 0 0-.149.241 NaNl-2.43a.615.615 0 0 0 NaN NaN.615.615 0 .24-.149 NaN NaNzm-1.38-6.34l.87.87-.331.332-1.306.435.435-1.305.333-.333zm1.74 0l-.87-.871 2.958-2.96.87.87-2.957 2.96zM19.59 8.35l-.635.634-.87-.87.635-.635a.616.616 0 0 1 .87.87z">
+          </path>
+          <path fill="currentColor"
+            d="M11.69 6.153H3.076a.615.615 0 0 0 0 1.23h8.614a.615.615 0 0 0 0-1.23zm-2.46 2.46H3.075a.615.615 0 0 0 0 1.231H9.23a.615.615 0 0 0 0-1.23zm0 2.462H3.075a.615.615 0 1 0 0 1.23H9.23a.615.615 0 0 0 0-1.23zm0 2.461H3.075a.615.615 0 0 0 0 1.23H9.23a.615.615 0 0 0 0-1.23zm2.46 3.774H8a.615.615 0 0 0 0 1.23h3.691a.615.615 0 0 0 0-1.23z">
+          </path>
+        </symbol>
+      </svg>
+    
+      <h1 class="visually-hidden">Palonchi vet klinika</h1>
+    
+      <!-- SITE-HEADER -->
+    
+      <header class="site-header">
+        <!-- Site-header top -->
+    
+        <div class="site-header__top">
+          <div class="container site-header__top-container">
+            <address class="site-header__address pseudo-img">г. Мариуполь, проспект Победы, 48а</address>
+    
+            <ul class="phones site-header__phones pseudo-img">
+              <li class="phones__item">
+                <a class="phone" href="tel:+998909213711">(067) 634 - 75 - 74</a>
+              </li>
+              <li class="phones__item">
+                <a class="phone" href="tel:+998909213711">(067) 634 - 75 - 74</a>
+              </li>
+              <li class="phones__item">
+                <a class="phone" href="tel:+998909213711">(067) 634 - 75 - 74</a>
+              </li>
+            </ul>
+    
+            <div class="work-hours site-header__work-hours pseudo-img">
+              <div>
+                <span class="work-hours__days">Пн - Пт</span>
+                <span class="work-hours__hours">8:00 - 18:00</span>
+              </div>
+              <div>
+                <span class="work-hours__days">Сб - Вс</span>
+                <span class="work-hours__hours">8:00 - 14:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Sitenav -->
+    
+        <nav class="sitenav">
+          <div class="container sitenav__container">
+            <!-- <div class="sitenav__logo-wrapper"> -->
+              <a class="logo sitenav__logo" href="index.html">
+                <img class="logo__img" src="img/logo.png" alt="Vet clinic logo" width="177" height="86" srcset="img/logo.png 1x, img/logo@2x.png 2x">
+              </a>
+            <!-- </div> -->
+    
+            <ul class="sitenav__list">
+              <li class="sitenav__item sitenav__item--active">
+                <a class="sitenav__link" href="#">Главная</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">О Клинике</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Наши Услуги</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Полезные Статьи</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">FAQ</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+    
+            <a class="sitenav__question-link" href="ask-question.html">Задать вопрос</a>
+          </div>
+        </nav>
+      </header>
+
+<main>
+    <section class="hero-section">
+        <div class="container service-hero">
+            <h1 class="service-hero__heading">Наши услуги</h1>
+            <p class="service-hero__text">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+        </div>
+    </section>
+    <section class="service-lists-section">
+      <div class="container">
+            <ul class="sservices-list">
+            <li class="sservices-item">
+                <h3>Первичный осмотр</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Первичный осмотр</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Хирургическое вмешательство</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Дерматология</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Лабораторная диагностика</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Офтальмология</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>УЗИ диагностика</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Чипированиея</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Международ-ные паспорта</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Вакцинация</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Стоматология</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+            <li class="sservices-item">
+                <h3>Вызов на дом</h3>
+                <p>По условиям акции в нашей клинике предоставляетса безплатная услуга</p>
+                <a class="service-link" href="#">Узнать больше</a>
+            </li>
+        </ul>
+      </div>
+    </section>
+</main>
+
+</body>
+</html>
